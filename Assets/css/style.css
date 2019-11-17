@@ -90,6 +90,16 @@
     width: 80%; 
     height: 3%; 
   }
+
+  /* jquery specific style for formating of stories */
+
+  .storyTitle {
+    display: none;
+  }
+
+  .storyBody {
+    display: none;
+  }
   
   @media only screen and (max-width:620px) {
     /* For mobile phones: */
