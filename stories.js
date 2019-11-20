@@ -1,5 +1,14 @@
 $(document).ready(function () {
-    $.getJSON('stories.json', function(data) {
+    // get the 
+    var href = document.location.href;
+    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
+    var jsonToParse;
+    if(lastPathSegment == "Stories.html"){
+        jsonToParse = "stories.json";
+    } else if (lastPathSegment == "Developer.html") {
+        jsonToParse = "developer.json";
+    }
+    $.getJSON(jsonToParse, function(data) {
         //get number of stories from json
         var stories = data.length;
 
