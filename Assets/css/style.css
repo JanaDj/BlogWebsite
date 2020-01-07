@@ -22,7 +22,7 @@
     color: white;
     padding:15px;
     text-align:center;
-    background-image: url("header.jpg");
+    background-image: url("../Images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -71,6 +71,11 @@
     padding: 10px;
   }
 
+  #gallery-wrapper{
+    width: 80%;
+    height: 100%;
+  }
+
   #right {
     background-color:#45ba80;
     float:left;
@@ -80,6 +85,34 @@
     text-align:center;
   }
 
+  #name, #email, #contactUsTextArea{
+    margin: 10px;
+    resize:none;
+  }
+
+  /* Gallery Related css  */
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 350px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+/* FOOTER CSS  */
   footer {
     background-color:#45ba80;
     text-align:center;

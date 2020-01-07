@@ -4,9 +4,9 @@ $(document).ready(function () {
     var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
     var jsonToParse;
     if(lastPathSegment == "Stories.html"){
-        jsonToParse = "stories.json";
+        jsonToParse = "../misc/stories.json";
     } else if (lastPathSegment == "Developer.html") {
-        jsonToParse = "developer.json";
+        jsonToParse = "../misc/developer.json";
     }
     $.getJSON(jsonToParse, function(data) {
         //get number of stories from json
