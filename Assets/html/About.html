@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' href='../css/style.css'>
         <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="../Images/logo-favicon.png">
+        <script src='../scripts/about_form.js'></script>
     </head>
     <body>
         <!-- Whole website wrapper -->
@@ -50,16 +52,16 @@
                     <p>
                     If you have any questions, suggestions or anything else, feel free to reach out, and I'd be happy to reply.
                     </p>
-                    <form name='contactUsForm' method="POST" action="#">
+                    <form name='contactUsForm' onsubmit='mailToFunc()'>
                         <br>
                         <fieldset>
                             <legend> Contact us </legend>
                         <label for="name">Name: </label> 
-                        <input type="text" id="name" >
+                        <input type="text" id="name" placeholder="Enter your name here" >
                         <label for="email">email: </label> 
-                        <input type="text" id="email" > 
+                        <input type="text" id="email" placeholder="Enter your email here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required > 
                             
-                        <textarea id="contactUsTextArea" cols="24" rows="6"></textarea>
+                        <textarea id="contactUsTextArea" cols="24" rows="6" placeholder="Enter your message here"></textarea>
                         <input type="submit" id="submitBtn" value="Send">
                     </fieldset>
 
